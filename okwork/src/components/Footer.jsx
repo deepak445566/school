@@ -1,6 +1,12 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleenquiry=()=>{
+    navigate("/france")
+  }
   return (
     <footer className="bg-[#F4F8E1] exo text-white py-12 md:py-16 overflow-hidden relative">
       {/* Decorative Elements */}
@@ -34,18 +40,18 @@ const Footer = () => {
               <a href="#" className=" hover:text-[#F15F25] transition-colors text-sm md:text-base flex items-center gap-2">
                 <span className="text-[#F15F25] text-xs">▶</span> Courses
               </a>
-              <a href="#" className=" hover:text-[#F15F25] transition-colors text-sm md:text-base flex items-center gap-2">
-                <span className="text-[#F15F25] text-xs">▶</span> Program
-              </a>
-              <a href="#" className=" hover:text-[#F15F25] transition-colors text-sm md:text-base flex items-center gap-2">
-                <span className="text-[#F15F25] text-xs">▶</span> About Us
-              </a>
-              <a href="#" className=" hover:text-[#F15F25] transition-colors text-sm md:text-base flex items-center gap-2">
-                <span className="text-[#F15F25] text-xs">▶</span> Contact Us
-              </a>
+              <Link to="fees" className=" hover:text-[#F15F25] transition-colors text-sm md:text-base flex items-center gap-2">
+                <span className="text-[#F15F25] text-xs">▶</span>Fee Policy
+              </Link>
+              <Link to="founder" className=" hover:text-[#F15F25] transition-colors text-sm md:text-base flex items-center gap-2">
+                <span className="text-[#F15F25] text-xs">▶</span> Founder Message
+              </Link>
+              <Link to="director" className=" hover:text-[#F15F25] transition-colors text-sm md:text-base flex items-center gap-2">
+                <span className="text-[#F15F25] text-xs">▶</span> Director Message
+              </Link>
            
             </div>
-             <button className="bg-[#F15F25] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#d44e1e] transition-colors">
+             <button onClick={handleenquiry} className="bg-[#F15F25] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#d44e1e] transition-colors">
   Get Francises
 </button>
           </div>
@@ -65,7 +71,7 @@ const Footer = () => {
               </h4>
               <a className="text-black hover:text-[#F15F25] transition-colors text-sm md:text-base break-all pl-7">
                9891965767 /
-                8588831055
+                9999995603
 
               </a>
             </div>
@@ -76,7 +82,7 @@ const Footer = () => {
                 <span>📍</span> Location
               </h4>
               <p className="text-black text-sm md:text-base leading-relaxed pl-7">
-               I-642, street no -6 East Jawahar. Nagar Loni GZB UP
+               I-642, street no -6 East Jawahar. Nagar Loni Shiv Vihar, Loni, Ghaziabad UP
               </p>
             </div>
           </div>

@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+const navigate = useNavigate();
+
+  const handlebook=()=>{
+    navigate("/admission")
+  }
   // Image URL - using a high-quality free image
   const imageUrl =
     "/images/hero1.png";
@@ -11,7 +17,7 @@ const Home = () => {
       <div className="container mx-auto px-6  md:px-12 lg:px-10 min-h-screen flex items-center relative z-10">
         
         {/* Flex container: column on mobile, row on desktop */}
-        <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-5 w-full">
+        <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-5 w-full" id="home">
           
           {/* LEFT SECTION: 40% width */}
           <div className="w-full md:w-[45%] text-center md:text-left space-y-6 md:space-y-6">
@@ -32,8 +38,8 @@ most young for your children life.
 
             {/* Button with hover effects */}
             <div className="flex justify-center md:justify-start">
-              <button className="group relative px-8 py-4 bg-[#F15F25] text-white font-semibold rounded-xl float hover:shadow-xl hover:transform hover:-translate-y-1 transition-all duration-300 ease-in-out">
-                <span className="relative z-10">Get Started Now</span>
+              <button onClick={handlebook} className="group relative px-8 py-4 bg-[#F15F25] text-white font-semibold rounded-xl float hover:shadow-xl hover:transform hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <span className="relative z-10">Get Admission</span>
               </button>
             </div>
           </div>

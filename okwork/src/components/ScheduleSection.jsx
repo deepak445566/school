@@ -3,7 +3,10 @@ import React from "react";
 const ScheduleSection = () => {
   return (
     <>
-    <div className="min-h-screen bg-[#FFE800] overflow-hidden exo py-12 md:py-16 lg:py-20 relative ">
+     <div className="  ">
+          <img src="/images/footerok.webp" className="w-full"/>
+        </div>
+    <div className="min-h-screen bg-[#FEDB1C] overflow-hidden exo py-12 md:py-16 lg:py-20 relative ">
       
       {/* Background Light Effects */}
       <div className="absolute left-0 top-1/2 -translate-y-1/2 w-64 md:w-96 h-64 md:h-96 bg-[#F15F25]/10 rounded-full blur-3xl"></div>

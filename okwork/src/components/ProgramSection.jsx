@@ -10,7 +10,7 @@ const ProgramSection = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 exo">
       
       {/* Section Header */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-12" id="classes">
         <h2 className="text-[#F15F25] text-lg font-semibold uppercase tracking-wider mb-2">Our Programs</h2>
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">Learning Paths for Every Age</h1>
         <p className="text-gray-600 max-w-2xl mx-auto mt-4">Discover the perfect program for your child's developmental stage</p>

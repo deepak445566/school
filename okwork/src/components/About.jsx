@@ -7,13 +7,20 @@ import aboutCounter from '/public/images/ab-counter.png';
 import bulbIcon from '/public/images/tubelight.png';
 import starIcon from '/public/images/star.png';
 import frame from '/public/images/frame.png';
+import { useNavigate } from 'react-router-dom';
 
 const AboutUs = () => {
+
+  const navigate = useNavigate();
+
+  const handlebook=()=>{
+    navigate("/admission")
+  }
   return (
     <div className="max-w-7xl py-5 md:py-16 relative">
       
       {/* Floating decorative icons */}
-      <div className="absolute top-40 left-100 animate-pulse">
+      <div className="absolute top-40 left-100 animate-pulse" id="about">
         <img src={bulbIcon} alt="bulb" className="w-24 h-24 opacity-50" />
       </div>
       <div className="absolute bottom-20 right-12 animate-pulse">
@@ -96,7 +103,7 @@ const AboutUs = () => {
           </div>
 
           <a 
-            href="#" 
+              onClick={handlebook}
             className="inline-flex items-center gap-2 text-lg font-semibold text-white bg-[#F15F25] px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
           >
             Online Admission →
