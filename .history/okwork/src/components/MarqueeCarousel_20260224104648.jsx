@@ -14,11 +14,11 @@ const MarqueeCarousel = () => {
         },
         {
             title: "Build with Passion, Ship with Pride",
-            image: "/images/lo12.jpg",
+            image: "/images/lo2.jpg",
         },
         {
             title: "Think Big, Code Smart",
-            image: "/images/lo5.jpg",
+            image: "/images/lo3.jpg",
         },
     ];
 

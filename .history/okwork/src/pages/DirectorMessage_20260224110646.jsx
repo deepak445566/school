@@ -19,7 +19,12 @@ const DirectorMessage = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-
+  const achievements = [
+    { icon: "🎓", number: "15+", label: "Years of Excellence" },
+    { icon: "🏆", number: "5000+", label: "Happy Children" },
+    { icon: "👩‍🏫", number: "50+", label: "Expert Teachers" },
+    { icon: "🌟", number: "100%", label: "Parent Satisfaction" }
+  ];
 
   const philosophyPoints = [
     {
@@ -293,7 +298,9 @@ const DirectorMessage = () => {
                       <p className="text-stone-600">Jawahar Nagar, Loni,</p>
                       <p className="text-stone-600 mb-3">Ghaziabad - 201102</p>
                       
-                      
+                      <div className="flex flex-wrap gap-2">
+                       
+                      </div>
                     </div>
                   </div>
                 </div>

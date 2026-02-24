@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
@@ -62,7 +61,7 @@ const Navbar = () => {
 
             {/* Add these if you have these sections on your page */}
              <Link 
-              to="/founder" 
+              to="/#classes" 
               smooth
               scroll={scrollWithOffset}
               className="text-gray-700 hover:text-[#F15F25] font-medium transition-colors duration-300 relative group"
@@ -70,15 +69,15 @@ const Navbar = () => {
               Founder
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#F15F25] group-hover:w-full transition-all duration-300"></span>
             </Link>
-                <Link 
-              to="/director" 
+                <HashLink 
+              to="/#classes" 
               smooth
               scroll={scrollWithOffset}
               className="text-gray-700 hover:text-[#F15F25] font-medium transition-colors duration-300 relative group"
             >
               Director
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#F15F25] group-hover:w-full transition-all duration-300"></span>
-            </Link>
+            </HashLink>
           </div>
 
           {/* Desktop Buttons - Contact Us & Get Franchise */}

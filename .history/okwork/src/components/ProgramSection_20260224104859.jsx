@@ -4,9 +4,7 @@ import program2 from '/public/images/phone.png';
 import program3 from '/public/images/boy.png';
 import program4 from '/public/images/camical-book.png';
 
-import program5 from '/public/images/phone.png';
-import program6 from '/public/images/boy.png';
-import program7 from '/public/images/camical-book.png';
+
 const ProgramSection = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 exo">
@@ -59,7 +57,7 @@ const ProgramSection = () => {
     color: "from-[#CFE7E5] to-[#bdd5d3]"
   },
   {
-    img: program5, 
+    img: program5, // You'll need to add this image import
     title: "Nursery Teacher Training",
     age: "(Certification Program)",
     bg: "bg-[#FFE5B4]",
@@ -89,7 +87,8 @@ const ProgramSection = () => {
     features: ["Homework Help", "Skill Classes", "Creative Activities"]
   }
 ].map((card, i) => (
-  
+  // Your existing card JSX here
+))
           <div
             key={i}
             className={`${card.bg} rounded-3xl p-6 md:p-8 text-center shadow-lg relative overflow-hidden group transition-all duration-500 ease-in-out hover:-translate-y-4 hover:shadow-2xl cursor-pointer`}

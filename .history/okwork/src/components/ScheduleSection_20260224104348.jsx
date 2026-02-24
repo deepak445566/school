@@ -10,37 +10,37 @@ const ScheduleSection = () => {
     },
     {
       id: 2,
-      src: "/images/lo13.jpg",
+      src: "/images/lo5.jpg",
       alt: "Ocean waves",
     },
     {
       id: 3,
-      src: "/images/lo8.jpg",
+      src: "/images/lo4.jpg",
       alt: "Forest path",
     },
     {
       id: 4,
-      src: "/images/lo11.jpg",
+      src: "/images/lo4.jpg",
       alt: "City skyline",
     },
     {
       id: 5,
-      src: "/images/lo7.jpg",
+      src: "/images/lo4.jpg",
       alt: "Desert dunes",
     },
     {
       id: 6,
-      src: "/images/lo8.jpg",
+      src: "/images/lo4.jpg",
       alt: "Northern lights",
     },
     {
       id: 7,
-      src: "/images/lo9.jpg",
+      src: "/images/lo4.jpg",
       alt: "Waterfall",
     },
     {
       id: 8,
-      src: "/images/lo12.jpg",
+      src: "/images/lo4.jpg",
       alt: "Beach sunset",
     },
   ];
@@ -74,7 +74,7 @@ const ScheduleSection = () => {
                     loading="lazy"
                   />
                   {/* Subtle overlay on hover */}
-                  
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-xl"></div>
                 </div>
               ))}
             </div>

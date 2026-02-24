@@ -18,7 +18,7 @@ const MarqueeCarousel = () => {
         },
         {
             title: "Think Big, Code Smart",
-            image: "/images/lo5.jpg",
+            image: "/images/lo3.jpg",
         },
     ];
 

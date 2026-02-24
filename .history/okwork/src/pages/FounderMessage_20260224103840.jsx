@@ -46,7 +46,7 @@ const FounderMessage = () => {
       </div>
 
       {/* Main Letter Card */}
-      <div className="relative max-w-4xl w-full bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden border border-amber-100/50 transform  transition-all duration-500">
+      <div className="relative max-w-4xl w-full bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden border border-amber-100/50 transform hover:scale-[1.02] transition-all duration-500">
         
         {/* Decorative Header with Pattern */}
         <div className="relative h-3 bg-gradient-to-r from-amber-400 via-emerald-400 to-teal-500">
@@ -88,28 +88,6 @@ const FounderMessage = () => {
             
             <div className="w-24 h-1 bg-gradient-to-r from-amber-300 via-emerald-300 to-teal-300 mx-auto rounded-full"></div>
           </div>
-
- <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center">
-            <div className="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-1/2">
-              <img 
-                src="/images/lo13.jpg" 
-                alt="Preschool children learning"
-                className="w-full h-48 sm:h-56 object-cover transition-transform duration-500"
-              />
-             
-            </div>
-            
-            <div className="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-1/2">
-              <img 
-                src="/images/lo10.jpg" 
-                alt="Children playing and learning"
-                className="w-full h-48 sm:h-56 object-cover transition-transform duration-500"
-              />
-             
-            </div>
-          </div>
-
-
 
           {/* Message Body with Floating Elements */}
           <div className="relative space-y-4 sm:space-y-5 text-stone-700 text-sm sm:text-base md:text-lg leading-relaxed mb-8 sm:mb-12">

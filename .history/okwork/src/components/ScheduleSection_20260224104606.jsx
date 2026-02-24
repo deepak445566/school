@@ -10,7 +10,7 @@ const ScheduleSection = () => {
     },
     {
       id: 2,
-      src: "/images/lo13.jpg",
+      src: "/images/lo5.jpg",
       alt: "Ocean waves",
     },
     {

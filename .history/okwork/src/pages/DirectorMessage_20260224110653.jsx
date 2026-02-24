@@ -19,7 +19,12 @@ const DirectorMessage = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-
+  const achievements = [
+    { icon: "🎓", number: "15+", label: "Years of Excellence" },
+    { icon: "🏆", number: "5000+", label: "Happy Children" },
+    { icon: "👩‍🏫", number: "50+", label: "Expert Teachers" },
+    { icon: "🌟", number: "100%", label: "Parent Satisfaction" }
+  ];
 
   const philosophyPoints = [
     {

@@ -5,42 +5,42 @@ const ScheduleSection = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "/images/lo1.jpg",
+      src: "https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=400&h=600&fit=crop",
       alt: "Mountain landscape",
     },
     {
       id: 2,
-      src: "/images/lo13.jpg",
+      src: "https://images.unsplash.com/photo-1682687220063-4742bd7fd98d?w=400&h=300&fit=crop",
       alt: "Ocean waves",
     },
     {
       id: 3,
-      src: "/images/lo8.jpg",
+      src: "https://images.unsplash.com/photo-1682687220199-d0124f48f95b?w=400&h=450&fit=crop",
       alt: "Forest path",
     },
     {
       id: 4,
-      src: "/images/lo11.jpg",
+      src: "https://images.unsplash.com/photo-1682687221038-404cb8830901?w=400&h=700&fit=crop",
       alt: "City skyline",
     },
     {
       id: 5,
-      src: "/images/lo7.jpg",
+      src: "https://images.unsplash.com/photo-1682687220923-c58b9a4592ea?w=400&h=350&fit=crop",
       alt: "Desert dunes",
     },
     {
       id: 6,
-      src: "/images/lo8.jpg",
+      src: "https://images.unsplash.com/photo-1682687220067-dced0a5faff4?w=400&h=500&fit=crop",
       alt: "Northern lights",
     },
     {
       id: 7,
-      src: "/images/lo9.jpg",
+      src: "https://images.unsplash.com/photo-1682687221080-5cb261c645cb?w=400&h=380&fit=crop",
       alt: "Waterfall",
     },
     {
       id: 8,
-      src: "/images/lo12.jpg",
+      src: "https://images.unsplash.com/photo-1682687220193-88f5cca8c7c1?w=400&h=550&fit=crop",
       alt: "Beach sunset",
     },
   ];
@@ -74,7 +74,7 @@ const ScheduleSection = () => {
                     loading="lazy"
                   />
                   {/* Subtle overlay on hover */}
-                  
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-xl"></div>
                 </div>
               ))}
             </div>

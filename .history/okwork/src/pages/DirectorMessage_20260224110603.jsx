@@ -19,7 +19,12 @@ const DirectorMessage = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-
+  const achievements = [
+    { icon: "🎓", number: "15+", label: "Years of Excellence" },
+    { icon: "🏆", number: "5000+", label: "Happy Children" },
+    { icon: "👩‍🏫", number: "50+", label: "Expert Teachers" },
+    { icon: "🌟", number: "100%", label: "Parent Satisfaction" }
+  ];
 
   const philosophyPoints = [
     {
@@ -222,7 +227,18 @@ const DirectorMessage = () => {
               ))}
             </div>
 
-         
+            {/* Achievements Strip */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
+              {achievements.map((item, index) => (
+                <div key={index} className="text-center group">
+                  <div className="text-4xl mb-2 group-hover:scale-110 transition-transform">{item.icon}</div>
+                  <div className="text-2xl font-bold bg-gradient-to-r from-sky-600 to-indigo-600 bg-clip-text text-transparent">
+                    {item.number}
+                  </div>
+                  <div className="text-xs text-stone-500">{item.label}</div>
+                </div>
+              ))}
+            </div>
 
             {/* Signature & Address Section with Creative Layout */}
             <div className="mt-12 lg:mt-16 pt-8 border-t-2 border-dashed border-indigo-200 grid grid-cols-1 lg:grid-cols-2 gap-8 items-end">
@@ -293,7 +309,14 @@ const DirectorMessage = () => {
                       <p className="text-stone-600">Jawahar Nagar, Loni,</p>
                       <p className="text-stone-600 mb-3">Ghaziabad - 201102</p>
                       
-                      
+                      <div className="flex flex-wrap gap-2">
+                        <span className="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium flex items-center gap-1">
+                          📞 +91 12345 67890
+                        </span>
+                        <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-xs font-medium flex items-center gap-1">
+                          ✉️ director@florawings.com
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>

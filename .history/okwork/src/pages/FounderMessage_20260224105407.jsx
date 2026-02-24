@@ -46,7 +46,7 @@ const FounderMessage = () => {
       </div>
 
       {/* Main Letter Card */}
-      <div className="relative max-w-4xl w-full bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden border border-amber-100/50 transform  transition-all duration-500">
+      <div className="relative max-w-4xl w-full bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden border border-amber-100/50 transform hover:scale-[1.02] transition-all duration-500">
         
         {/* Decorative Header with Pattern */}
         <div className="relative h-3 bg-gradient-to-r from-amber-400 via-emerald-400 to-teal-500">
