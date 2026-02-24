@@ -112,11 +112,15 @@ const DirectorMessage = () => {
               
               {/* Animated Title - Stack on mobile, row on larger screens */}
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 mt-4 md:mt-6 lg:mt-8">
-                
+                <div className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 rounded-full bg-gradient-to-br from-sky-200 to-sky-400 flex items-center justify-center shadow-md md:shadow-xl animate-spin-slow order-2 sm:order-1">
+                  <span className="text-lg md:text-xl lg:text-2xl">🌺</span>
+                </div>
                 <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-serif italic text-stone-600 bg-white/50 px-4 md:px-6 lg:px-8 py-2 md:py-3 rounded-full backdrop-blur-sm shadow-md md:shadow-lg order-1 sm:order-2 w-full sm:w-auto">
                   Flora Wings Preschool
                 </p>
-               
+                <div className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 rounded-full bg-gradient-to-br from-indigo-200 to-indigo-400 flex items-center justify-center shadow-md md:shadow-xl animate-spin-slow animation-delay-2000 order-3">
+                  <span className="text-lg md:text-xl lg:text-2xl">🕊️</span>
+                </div>
               </div>
             </div>
 

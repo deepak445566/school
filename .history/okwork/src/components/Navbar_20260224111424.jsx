@@ -167,7 +167,7 @@ const Navbar = () => {
               to="/director" 
               smooth
               scroll={scrollWithOffset}
-              className="block py-2.5 px-3 text-gray-700 hover:text-[#F15F25] font-medium transition-colors duration-300 hover:bg-gray-50 rounded-lg"
+              className="text-gray-700 hover:text-[#F15F25] font-medium transition-colors duration-300 relative group"
             >
               Director
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#F15F25] group-hover:w-full transition-all duration-300"></span>
