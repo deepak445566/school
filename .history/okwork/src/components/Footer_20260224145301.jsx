@@ -172,7 +172,7 @@ const Footer = () => {
               className="group relative flex items-center gap-2 text-xs md:text-sm text-black hover:text-[#F15F25] transition-colors duration-300"
             >
               <span className="font-medium">Design & Develop by</span>
-              <span className="font-bold bg-gradient-to-r from-[#F15F25] to-[#d44e1e] bg-clip-text text-transparent group-hover:scale-105 transition-transform">
+              <span className="font-bold bg-blackbg-clip-text text-transparent group-hover:scale-105 transition-transform">
                 Digital Express India
               </span>
               {/* External link icon */}

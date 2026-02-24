@@ -13,11 +13,9 @@ const Footer = () => {
     window.open(url, '_blank');
   };
 
-  const handleDeveloperClick = () => {
-    window.open('https://digitalexpressindia.com', '_blank');
-  };
 
 
+  
   return (
     <footer className="bg-[#F4F8E1] exo text-white py-12 md:py-16 overflow-hidden relative">
       {/* Decorative Elements */}
@@ -167,24 +165,6 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 md:mt-12 pt-6 md:pt-8 text-center text-black text-xs md:text-sm font-semibold">
           <p>&copy; {new Date().getFullYear()} FLORAWINGS PRE-PRIMARY SCHOOL. All rights reserved.</p>
         </div>
-          <button
-              onClick={handleDeveloperClick}
-              className="group relative flex items-center gap-2 text-xs md:text-sm text-black hover:text-[#F15F25] transition-colors duration-300"
-            >
-              <span className="font-medium">Design & Develop by</span>
-              <span className="font-bold bg-gradient-to-r from-[#F15F25] to-[#d44e1e] bg-clip-text text-transparent group-hover:scale-105 transition-transform">
-                Digital Express India
-              </span>
-              {/* External link icon */}
-              <svg 
-                className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </button>
       </div>
       <div className='absolute bottom-0 left-0 w-full'>
         <img src='/images/bg-bottom.png' className='w-full' alt="Footer background"/>
