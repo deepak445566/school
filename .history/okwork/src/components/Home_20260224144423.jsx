@@ -11,7 +11,7 @@ const navigate = useNavigate();
   // WhatsApp button click handler
   const handleWhatsApp = () => {
     // Replace with your actual WhatsApp number
-    const phoneNumber = "9198919 65767"; // Format: country code + number without +
+    const phoneNumber = "91"; // Format: country code + number without +
     const message = "Hello! I'm interested in admission for my child at Flora Wings Preschool.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
