@@ -68,11 +68,7 @@ const FounderMessage = () => {
               </svg>
               <span className="w-12 h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
             </div>
-            
-
-
-
-            <div className="flex items-center justify-center gap-4 md:gap-6 mb-6 ">
+            <div className="flex items-center justify-center gap-4 md:gap-6 mb-6">
   
   {/* Left - Vintage Frame */}
   <div className="relative">
@@ -122,14 +118,10 @@ const FounderMessage = () => {
     <div className="absolute -bottom-1 -left-1 w-3 h-3 border-b-2 border-l-2 border-emerald-400"></div>
   </div>
 </div>
-
-
-
-
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-light text-stone-700 tracking-wide">
               From the Desk of the
             </h1>
-            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mt-2 mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mt-2 mb-4">
               Founder & Franchisor
             </h2>
             

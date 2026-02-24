@@ -54,7 +54,7 @@ const FounderMessage = () => {
         </div>
         
         {/* Content Container */}
-        <div className="px-6 sm:px-8 md:px-12 py-8 sm:py-10 md:py-14">
+        <div className="px-8 sm:px-8 md:px-12 py-8 sm:py-10 md:py-14">
           
 
 

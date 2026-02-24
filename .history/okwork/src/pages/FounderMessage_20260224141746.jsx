@@ -72,7 +72,7 @@ const FounderMessage = () => {
 
 
 
-            <div className="flex items-center justify-center gap-4 md:gap-6 mb-6 ">
+            <div className="flex items-center justify-center gap-4 md:gap-6 mb-6 p-4">
   
   {/* Left - Vintage Frame */}
   <div className="relative">
@@ -129,7 +129,7 @@ const FounderMessage = () => {
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-light text-stone-700 tracking-wide">
               From the Desk of the
             </h1>
-            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mt-2 mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mt-2 mb-4">
               Founder & Franchisor
             </h2>
             
