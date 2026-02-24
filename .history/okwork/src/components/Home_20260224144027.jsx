@@ -42,7 +42,7 @@ const navigate = useNavigate();
           
           {/* WhatsApp Icon */}
           <svg 
-            className="w-13 h-13 md:w-18 md:h-18 text-white relative z-10" 
+            className="w-7 h-13 md:w-18 md:h-18 text-white relative z-10" 
             fill="currentColor" 
             viewBox="0 0 24 24"
           >

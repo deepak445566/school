@@ -36,7 +36,7 @@ const FranchiseForm = () => {
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          access_key: 'b98bd3f6-2eb5-47a3-b757-984057fc985f', 
+          access_key: '', c
           
           // Form fields
           name: formData.fullName,
