@@ -38,7 +38,7 @@ const Footer = () => {
             <div className="flex items-center gap-3 pt-2">
               {/* Instagram */}
               <button 
-                onClick={() => handleSocialClick('https://www.instagram.com/flora_wings_?utm_source=qr&igsh=anM4dnYwMHplYjAx')}
+                onClick={() => handleSocialClick('https://instagram.com/florawingspreschool')}
                 className="group relative w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl"
                 aria-label="Follow us on Instagram"
               >
@@ -137,7 +137,7 @@ const Footer = () => {
               <p className="text-black text-sm font-medium mb-2">Follow Us:</p>
               <div className="flex items-center gap-2">
                 <a 
-                  href="https://www.instagram.com/flora_wings_?utm_source=qr&igsh=anM4dnYwMHplYjAx" 
+                  href="https://instagram.com/florawingspreschool" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-[#F15F25] hover:underline text-sm"

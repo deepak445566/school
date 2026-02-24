@@ -137,7 +137,7 @@ const Footer = () => {
               <p className="text-black text-sm font-medium mb-2">Follow Us:</p>
               <div className="flex items-center gap-2">
                 <a 
-                  href="https://www.instagram.com/flora_wings_?utm_source=qr&igsh=anM4dnYwMHplYjAx" 
+                  href="https://instagram.com/florawingspreschool" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-[#F15F25] hover:underline text-sm"
