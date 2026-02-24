@@ -68,54 +68,69 @@ const FounderMessage = () => {
               </svg>
               <span className="w-12 h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
             </div>
-            <div className="flex items-center justify-center gap-4 md:gap-6 mb-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 mb-6 bg-gradient-to-r from-amber-50/50 via-white to-emerald-50/50 p-4 md:p-6 rounded-2xl shadow-lg">
   
-  {/* Left - Vintage Frame */}
-  <div className="relative">
-    <div className="w-14 h-14 md:w-16 md:h-16 bg-amber-100 rounded-full flex items-center justify-center border-2 border-amber-300/50">
-      <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-amber-200 to-amber-300 flex items-center justify-center shadow-inner">
-        <span className="text-amber-700 text-xl md:text-2xl">⚜️</span>
+  {/* Left Side - Cute Animal/Toys */}
+  <div className="flex items-center gap-2">
+    <div className="relative animate-bounce-slow">
+      <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-500 flex items-center justify-center transform rotate-6 shadow-xl">
+        <span className="text-2xl md:text-3xl">🧸</span>
       </div>
-    </div>
-    {/* Vintage corner decorations */}
-    <div className="absolute -top-1 -left-1 w-3 h-3 border-t-2 border-l-2 border-amber-400"></div>
-    <div className="absolute -bottom-1 -right-1 w-3 h-3 border-b-2 border-r-2 border-amber-400"></div>
-  </div>
-
-  {/* Center - Ornate Title */}
-  <div className="relative px-4">
-    {/* Top decorative line */}
-    <div className="absolute -top-3 left-0 right-0 flex justify-center gap-1">
-      <span className="w-1 h-1 bg-amber-300 rotate-45"></span>
-      <span className="w-2 h-1 bg-amber-400"></span>
-      <span className="w-1 h-1 bg-amber-300 rotate-45"></span>
+      {/* Tiny star */}
+      <span className="absolute -top-1 -right-1 text-yellow-400 animate-spin-slow">⭐</span>
     </div>
     
-    <p className="text-2xl sm:text-3xl md:text-4xl font-serif text-stone-700">
-      <span className="text-amber-600">F</span>lora 
-      <span className="text-emerald-600 mx-1">✧</span> 
-      <span className="text-emerald-600">W</span>ings
-    </p>
-    <p className="text-xs text-center tracking-[0.5em] text-stone-400 mt-1">PRESCHOOL</p>
-    
-    {/* Bottom decorative line */}
-    <div className="absolute -bottom-3 left-0 right-0 flex justify-center gap-1">
-      <span className="w-1 h-1 bg-emerald-300 rotate-45"></span>
-      <span className="w-2 h-1 bg-emerald-400"></span>
-      <span className="w-1 h-1 bg-emerald-300 rotate-45"></span>
+    <div className="relative animate-bounce-slow animation-delay-500">
+      <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-emerald-400 to-emerald-500 flex items-center justify-center transform -rotate-3 shadow-lg">
+        <span className="text-xl md:text-2xl">📚</span>
+      </div>
     </div>
   </div>
 
-  {/* Right - Vintage Frame */}
-  <div className="relative">
-    <div className="w-14 h-14 md:w-16 md:h-16 bg-emerald-100 rounded-full flex items-center justify-center border-2 border-emerald-300/50">
-      <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-emerald-200 to-emerald-300 flex items-center justify-center shadow-inner">
-        <span className="text-emerald-700 text-xl md:text-2xl">⚜️</span>
+  {/* Center - Main Title with Rainbow Effect */}
+  <div className="relative text-center">
+    {/* Floating clouds */}
+    <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 text-4xl opacity-20 animate-float">☁️</div>
+    
+    <div className="relative group">
+      <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold font-serif italic">
+        <span className="bg-gradient-to-r from-amber-600 via-emerald-600 to-teal-600 bg-clip-text text-transparent">
+          Flora Wings
+        </span>
+      </h3>
+      <p className="text-lg md:text-xl text-stone-600 -mt-1">Preschool</p>
+      
+      {/* Rainbow underline */}
+      <div className="flex gap-0.5 justify-center mt-1">
+        <span className="w-2 h-1 bg-red-400 rounded-full"></span>
+        <span className="w-2 h-1 bg-orange-400 rounded-full"></span>
+        <span className="w-2 h-1 bg-yellow-400 rounded-full"></span>
+        <span className="w-2 h-1 bg-green-400 rounded-full"></span>
+        <span className="w-2 h-1 bg-blue-400 rounded-full"></span>
+        <span className="w-2 h-1 bg-indigo-400 rounded-full"></span>
+        <span className="w-2 h-1 bg-purple-400 rounded-full"></span>
       </div>
     </div>
-    {/* Vintage corner decorations */}
-    <div className="absolute -top-1 -right-1 w-3 h-3 border-t-2 border-r-2 border-emerald-400"></div>
-    <div className="absolute -bottom-1 -left-1 w-3 h-3 border-b-2 border-l-2 border-emerald-400"></div>
+    
+    {/* Floating hearts */}
+    <div className="absolute -right-8 -top-2 text-pink-400 animate-float animation-delay-1000">❤️</div>
+    <div className="absolute -left-8 -bottom-2 text-pink-400 animate-float animation-delay-2000">❤️</div>
+  </div>
+
+  {/* Right Side - More Cute Elements */}
+  <div className="flex items-center gap-2">
+    <div className="relative animate-bounce-slow animation-delay-1000">
+      <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-amber-400 to-amber-500 flex items-center justify-center transform rotate-3 shadow-lg">
+        <span className="text-xl md:text-2xl">🎨</span>
+      </div>
+    </div>
+    
+    <div className="relative animate-bounce-slow animation-delay-1500">
+      <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center transform -rotate-6 shadow-xl">
+        <span className="text-2xl md:text-3xl">🦊</span>
+      </div>
+      <span className="absolute -bottom-1 -right-1 text-xs">✨</span>
+    </div>
   </div>
 </div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-light text-stone-700 tracking-wide">

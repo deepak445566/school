@@ -107,58 +107,68 @@ const DirectorMessage = () => {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold bg-gradient-to-r from-sky-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mt-1 md:mt-2 mb-3 md:mb-4 lg:mb-6 leading-tight">
                   Director
                 </h2>
-                
+                <div className="absolute -bottom-1 md:-bottom-2 left-0 right-0 h-0.5 md:h-1 bg-gradient-to-r from-transparent via-indigo-400 to-transparent"></div>
               </div>
               
               {/* Animated Title - Stack on mobile, row on larger screens */}
-             <div className="flex items-center justify-center gap-4 md:gap-6 mb-6">
+             <div className="flex items-center justify-center gap-3 md:gap-5 mb-6">
   
-  {/* Left - Vintage Frame */}
-  <div className="relative">
-    <div className="w-14 h-14 md:w-16 md:h-16 bg-amber-100 rounded-full flex items-center justify-center border-2 border-amber-300/50">
-      <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-amber-200 to-amber-300 flex items-center justify-center shadow-inner">
-        <span className="text-amber-700 text-xl md:text-2xl">⚜️</span>
-      </div>
+  {/* Left - Butterfly/Wings */}
+  <div className="relative group">
+    <div className="relative w-14 h-14 md:w-16 md:h-16">
+      {/* Left wing */}
+      <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-6 h-8 md:w-7 md:h-9 bg-gradient-to-br from-amber-300 to-amber-400 rounded-l-full rotate-6 group-hover:-rotate-12 transition-all duration-500"></div>
+      {/* Right wing */}
+      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-6 h-8 md:w-7 md:h-9 bg-gradient-to-br from-amber-400 to-amber-500 rounded-r-full -rotate-6 group-hover:rotate-12 transition-all duration-500"></div>
+      {/* Body */}
+      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-8 bg-amber-600 rounded-full"></div>
+      {/* Antennae */}
+      <div className="absolute -top-1 left-1/3 w-px h-3 bg-amber-600 transform -rotate-12"></div>
+      <div className="absolute -top-1 right-1/3 w-px h-3 bg-amber-600 transform rotate-12"></div>
     </div>
-    {/* Vintage corner decorations */}
-    <div className="absolute -top-1 -left-1 w-3 h-3 border-t-2 border-l-2 border-amber-400"></div>
-    <div className="absolute -bottom-1 -right-1 w-3 h-3 border-b-2 border-r-2 border-amber-400"></div>
+    {/* Floating dots */}
+    <span className="absolute -top-2 -right-2 text-xs opacity-50 animate-ping-slow">✨</span>
   </div>
 
-  {/* Center - Ornate Title */}
-  <div className="relative px-4">
-    {/* Top decorative line */}
-    <div className="absolute -top-3 left-0 right-0 flex justify-center gap-1">
-      <span className="w-1 h-1 bg-amber-300 rotate-45"></span>
-      <span className="w-2 h-1 bg-amber-400"></span>
-      <span className="w-1 h-1 bg-amber-300 rotate-45"></span>
+  {/* Center - Nature Inspired Title */}
+  <div className="relative text-center">
+    {/* Flower decoration */}
+    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 text-xl animate-float">🌸</div>
+    
+    <div className="relative">
+      <p className="text-3xl sm:text-4xl md:text-5xl font-serif italic">
+        <span className="text-emerald-600">Flora</span>
+        <span className="text-amber-500 mx-1">🦋</span>
+        <span className="text-amber-600">Wings</span>
+      </p>
+      
+      {/* Vine decoration */}
+      <div className="absolute -left-6 top-1/2 w-4 h-8 border-l-2 border-b-2 border-emerald-300 rounded-bl-full"></div>
+      <div className="absolute -right-6 top-1/2 w-4 h-8 border-r-2 border-b-2 border-emerald-300 rounded-br-full"></div>
+      
+      {/* Leaves */}
+      <div className="absolute -left-8 top-1/3 w-3 h-3 bg-emerald-300 rounded-full transform -rotate-45"></div>
+      <div className="absolute -right-8 top-1/3 w-3 h-3 bg-emerald-300 rounded-full transform rotate-45"></div>
     </div>
     
-    <p className="text-2xl sm:text-3xl md:text-4xl font-serif text-stone-700">
-      <span className="text-amber-600">F</span>lora 
-      <span className="text-emerald-600 mx-1">✧</span> 
-      <span className="text-emerald-600">W</span>ings
-    </p>
-    <p className="text-xs text-center tracking-[0.5em] text-stone-400 mt-1">PRESCHOOL</p>
-    
-    {/* Bottom decorative line */}
-    <div className="absolute -bottom-3 left-0 right-0 flex justify-center gap-1">
-      <span className="w-1 h-1 bg-emerald-300 rotate-45"></span>
-      <span className="w-2 h-1 bg-emerald-400"></span>
-      <span className="w-1 h-1 bg-emerald-300 rotate-45"></span>
-    </div>
+    <p className="text-xs text-stone-400 mt-1">where little minds bloom</p>
   </div>
 
-  {/* Right - Vintage Frame */}
-  <div className="relative">
-    <div className="w-14 h-14 md:w-16 md:h-16 bg-emerald-100 rounded-full flex items-center justify-center border-2 border-emerald-300/50">
-      <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-emerald-200 to-emerald-300 flex items-center justify-center shadow-inner">
-        <span className="text-emerald-700 text-xl md:text-2xl">⚜️</span>
-      </div>
+  {/* Right - Another Butterfly */}
+  <div className="relative group">
+    <div className="relative w-14 h-14 md:w-16 md:h-16">
+      {/* Left wing */}
+      <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-6 h-8 md:w-7 md:h-9 bg-gradient-to-br from-emerald-300 to-emerald-400 rounded-l-full rotate-12 group-hover:-rotate-12 transition-all duration-500"></div>
+      {/* Right wing */}
+      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-6 h-8 md:w-7 md:h-9 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-r-full -rotate-12 group-hover:rotate-12 transition-all duration-500"></div>
+      {/* Body */}
+      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-8 bg-emerald-600 rounded-full"></div>
+      {/* Antennae */}
+      <div className="absolute -top-1 left-1/3 w-px h-3 bg-emerald-600 transform -rotate-12"></div>
+      <div className="absolute -top-1 right-1/3 w-px h-3 bg-emerald-600 transform rotate-12"></div>
     </div>
-    {/* Vintage corner decorations */}
-    <div className="absolute -top-1 -right-1 w-3 h-3 border-t-2 border-r-2 border-emerald-400"></div>
-    <div className="absolute -bottom-1 -left-1 w-3 h-3 border-b-2 border-l-2 border-emerald-400"></div>
+    {/* Floating dots */}
+    <span className="absolute -bottom-2 -left-2 text-xs opacity-50 animate-ping-slow animation-delay-1000">✨</span>
   </div>
 </div>
             </div>

@@ -56,9 +56,6 @@ const FounderMessage = () => {
         {/* Content Container */}
         <div className="px-6 sm:px-8 md:px-12 py-8 sm:py-10 md:py-14">
           
-
-
-          
           {/* Pinterest-style Header with Icons */}
           <div className="text-center mb-8 sm:mb-12 relative">
             <div className="inline-flex items-center justify-center gap-2 mb-4">
@@ -68,56 +65,7 @@ const FounderMessage = () => {
               </svg>
               <span className="w-12 h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
             </div>
-            <div className="flex items-center justify-center gap-4 md:gap-6 mb-6">
-  
-  {/* Left - Vintage Frame */}
-  <div className="relative">
-    <div className="w-14 h-14 md:w-16 md:h-16 bg-amber-100 rounded-full flex items-center justify-center border-2 border-amber-300/50">
-      <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-amber-200 to-amber-300 flex items-center justify-center shadow-inner">
-        <span className="text-amber-700 text-xl md:text-2xl">⚜️</span>
-      </div>
-    </div>
-    {/* Vintage corner decorations */}
-    <div className="absolute -top-1 -left-1 w-3 h-3 border-t-2 border-l-2 border-amber-400"></div>
-    <div className="absolute -bottom-1 -right-1 w-3 h-3 border-b-2 border-r-2 border-amber-400"></div>
-  </div>
-
-  {/* Center - Ornate Title */}
-  <div className="relative px-4">
-    {/* Top decorative line */}
-    <div className="absolute -top-3 left-0 right-0 flex justify-center gap-1">
-      <span className="w-1 h-1 bg-amber-300 rotate-45"></span>
-      <span className="w-2 h-1 bg-amber-400"></span>
-      <span className="w-1 h-1 bg-amber-300 rotate-45"></span>
-    </div>
-    
-    <p className="text-2xl sm:text-3xl md:text-4xl font-serif text-stone-700">
-      <span className="text-amber-600">F</span>lora 
-      <span className="text-emerald-600 mx-1">✧</span> 
-      <span className="text-emerald-600">W</span>ings
-    </p>
-    <p className="text-xs text-center tracking-[0.5em] text-stone-400 mt-1">PRESCHOOL</p>
-    
-    {/* Bottom decorative line */}
-    <div className="absolute -bottom-3 left-0 right-0 flex justify-center gap-1">
-      <span className="w-1 h-1 bg-emerald-300 rotate-45"></span>
-      <span className="w-2 h-1 bg-emerald-400"></span>
-      <span className="w-1 h-1 bg-emerald-300 rotate-45"></span>
-    </div>
-  </div>
-
-  {/* Right - Vintage Frame */}
-  <div className="relative">
-    <div className="w-14 h-14 md:w-16 md:h-16 bg-emerald-100 rounded-full flex items-center justify-center border-2 border-emerald-300/50">
-      <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-emerald-200 to-emerald-300 flex items-center justify-center shadow-inner">
-        <span className="text-emerald-700 text-xl md:text-2xl">⚜️</span>
-      </div>
-    </div>
-    {/* Vintage corner decorations */}
-    <div className="absolute -top-1 -right-1 w-3 h-3 border-t-2 border-r-2 border-emerald-400"></div>
-    <div className="absolute -bottom-1 -left-1 w-3 h-3 border-b-2 border-l-2 border-emerald-400"></div>
-  </div>
-</div>
+            
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-light text-stone-700 tracking-wide">
               From the Desk of the
             </h1>
@@ -126,7 +74,17 @@ const FounderMessage = () => {
             </h2>
             
             {/* Decorative Element */}
-           
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center">
+                <span className="w-6 h-6 rounded-full bg-amber-300"></span>
+              </div>
+              <p className="text-xl sm:text-2xl md:text-3xl font-serif italic text-stone-600">
+                Flora Wings Preschool
+              </p>
+              <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center">
+                <span className="w-6 h-6 rounded-full bg-emerald-300"></span>
+              </div>
+            </div>
             
             <div className="w-24 h-1 bg-gradient-to-r from-amber-300 via-emerald-300 to-teal-300 mx-auto rounded-full"></div>
           </div>
@@ -220,8 +178,8 @@ const FounderMessage = () => {
             
             {/* Left side - Signature with Photo Frame Effect */}
             <div className="relative flex items-center gap-4">
-              <div className="w-16 h-16 sm:w-25 sm:h-25 rounded-full bg-gradient-to-br from-amber-200 to-emerald-200 flex items-center justify-center border-4 border-white shadow-xl">
-               <img src="/images/ma2.jpg" className='rounded-full h-full w-full'/>
+              <div className="w-16 h-16 sm:w-20 sm:h-25 rounded-full bg-gradient-to-br from-amber-200 to-emerald-200 flex items-center justify-center border-4 border-white shadow-xl">
+               <img src="/images/ma2.jpg" className='rounded-full'/>
               </div>
               <div>
                 <p className="text-base sm:text-lg text-stone-600 font-light">Warm Regards,</p>

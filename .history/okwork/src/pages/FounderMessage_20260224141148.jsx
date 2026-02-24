@@ -68,54 +68,43 @@ const FounderMessage = () => {
               </svg>
               <span className="w-12 h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
             </div>
-            <div className="flex items-center justify-center gap-4 md:gap-6 mb-6">
+            <div className="flex items-center justify-center gap-6 md:gap-8 mb-6">
   
-  {/* Left - Vintage Frame */}
+  {/* Left - Minimal Line Design */}
   <div className="relative">
-    <div className="w-14 h-14 md:w-16 md:h-16 bg-amber-100 rounded-full flex items-center justify-center border-2 border-amber-300/50">
-      <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-amber-200 to-amber-300 flex items-center justify-center shadow-inner">
-        <span className="text-amber-700 text-xl md:text-2xl">⚜️</span>
-      </div>
+    <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
+      <svg className="w-full h-full" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="18" stroke="#F59E0B" strokeWidth="1.5" strokeDasharray="4 4" className="animate-spin-slow"/>
+        <circle cx="20" cy="20" r="8" fill="#F59E0B" className="animate-pulse"/>
+      </svg>
     </div>
-    {/* Vintage corner decorations */}
-    <div className="absolute -top-1 -left-1 w-3 h-3 border-t-2 border-l-2 border-amber-400"></div>
-    <div className="absolute -bottom-1 -right-1 w-3 h-3 border-b-2 border-r-2 border-amber-400"></div>
+    {/* Connecting line */}
+    <div className="absolute top-1/2 -right-8 w-8 h-px bg-gradient-to-r from-amber-400 to-transparent hidden md:block"></div>
   </div>
 
-  {/* Center - Ornate Title */}
-  <div className="relative px-4">
-    {/* Top decorative line */}
-    <div className="absolute -top-3 left-0 right-0 flex justify-center gap-1">
-      <span className="w-1 h-1 bg-amber-300 rotate-45"></span>
-      <span className="w-2 h-1 bg-amber-400"></span>
-      <span className="w-1 h-1 bg-amber-300 rotate-45"></span>
-    </div>
-    
-    <p className="text-2xl sm:text-3xl md:text-4xl font-serif text-stone-700">
-      <span className="text-amber-600">F</span>lora 
-      <span className="text-emerald-600 mx-1">✧</span> 
-      <span className="text-emerald-600">W</span>ings
+  {/* Center - Modern Typography */}
+  <div className="relative text-center">
+    <p className="text-3xl sm:text-4xl md:text-5xl font-light tracking-wide text-stone-700">
+      <span className="font-bold bg-gradient-to-r from-amber-600 to-emerald-600 bg-clip-text text-transparent">Flora</span>
+      <span className="mx-1 text-amber-300">✦</span>
+      <span className="font-light">Wings</span>
     </p>
-    <p className="text-xs text-center tracking-[0.5em] text-stone-400 mt-1">PRESCHOOL</p>
+    <p className="text-sm uppercase tracking-[0.3em] text-stone-400 mt-1">preschool</p>
     
-    {/* Bottom decorative line */}
-    <div className="absolute -bottom-3 left-0 right-0 flex justify-center gap-1">
-      <span className="w-1 h-1 bg-emerald-300 rotate-45"></span>
-      <span className="w-2 h-1 bg-emerald-400"></span>
-      <span className="w-1 h-1 bg-emerald-300 rotate-45"></span>
-    </div>
+    {/* Modern underline */}
+    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-gradient-to-r from-amber-400 to-emerald-400"></div>
   </div>
 
-  {/* Right - Vintage Frame */}
+  {/* Right - Minimal Line Design */}
   <div className="relative">
-    <div className="w-14 h-14 md:w-16 md:h-16 bg-emerald-100 rounded-full flex items-center justify-center border-2 border-emerald-300/50">
-      <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-emerald-200 to-emerald-300 flex items-center justify-center shadow-inner">
-        <span className="text-emerald-700 text-xl md:text-2xl">⚜️</span>
-      </div>
+    <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
+      <svg className="w-full h-full" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="18" stroke="#10B981" strokeWidth="1.5" strokeDasharray="4 4" className="animate-spin-slow animation-delay-2000"/>
+        <circle cx="20" cy="20" r="8" fill="#10B981" className="animate-pulse"/>
+      </svg>
     </div>
-    {/* Vintage corner decorations */}
-    <div className="absolute -top-1 -right-1 w-3 h-3 border-t-2 border-r-2 border-emerald-400"></div>
-    <div className="absolute -bottom-1 -left-1 w-3 h-3 border-b-2 border-l-2 border-emerald-400"></div>
+    {/* Connecting line */}
+    <div className="absolute top-1/2 -left-8 w-8 h-px bg-gradient-to-l from-emerald-400 to-transparent hidden md:block"></div>
   </div>
 </div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-light text-stone-700 tracking-wide">

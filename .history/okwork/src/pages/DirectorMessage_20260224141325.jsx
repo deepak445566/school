@@ -107,7 +107,7 @@ const DirectorMessage = () => {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold bg-gradient-to-r from-sky-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mt-1 md:mt-2 mb-3 md:mb-4 lg:mb-6 leading-tight">
                   Director
                 </h2>
-                
+                <div className="absolute -bottom-1 md:-bottom-2 left-0 right-0 h-0.5 md:h-1 bg-gradient-to-r from-transparent via-indigo-400 to-transparent"></div>
               </div>
               
               {/* Animated Title - Stack on mobile, row on larger screens */}
